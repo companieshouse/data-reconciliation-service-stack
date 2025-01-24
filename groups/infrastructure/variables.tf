@@ -64,13 +64,6 @@ variable "enable_asg_autoscaling" {
   description = "Whether to enable auto-scaling of the ASG by creating a capacity provider for the ECS cluster."
 }
 
-# Networking
-variable "internal_albs" {
-  type        = bool
-  description = "Whether the ALBs should be internal or public facing"
-  default     = true
-}
-
 # Container Insights - ECS
 variable "enable_container_insights" {
   type        = bool
