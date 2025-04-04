@@ -39,7 +39,7 @@ module "ecs-cluster" {
   scaleup_schedule                    = var.asg_scaleup_schedule
   enable_asg_autoscaling              = var.enable_asg_autoscaling
   notify_topic_slack_endpoint         = local.notify_topic_slack_endpoint
-  create_eventbridge_scheduler_group  = true
+  create_eventbridge_scheduler_group  = var.create_eventbridge_scheduler_group
   create_eventbridge_scheduler_role   = var.create_eventbridge_scheduler_role
 }
 
