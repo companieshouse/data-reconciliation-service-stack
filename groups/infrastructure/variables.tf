@@ -83,3 +83,9 @@ variable "create_eventbridge_scheduler_role" {
   description = "Whether to enable eventbridge scheduler iam role in ecs cluster."
   type        = bool
 }
+
+variable "create_eventbridge_scheduler_group" {
+  default     = false
+  description = "Whether to create the ECS EventBridge scheduler group"
+  type        = bool
+}
