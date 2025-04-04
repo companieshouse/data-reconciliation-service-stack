@@ -78,6 +78,12 @@ variable "enable_container_insights" {
   type        = bool
 }
 
+variable "create_eventbridge_scheduler_group" {
+  default     = true
+  description = "Whether to create the ECS EventBridge scheduler group"
+  type        = bool
+}
+
 variable "create_eventbridge_scheduler_role" {
   default     = true
   description = "Whether to enable eventbridge scheduler iam role in ecs cluster."
